@@ -1,0 +1,46 @@
+@use '../variaveis';
+
+.infos-bar {
+    background-image: linear-gradient(variaveis.$corDeFundo3, variaveis.$corDeFundo4);
+    padding: 64px 12px;
+
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto 42px;
+        padding: 12px;
+        font-size: 48px;
+        font-weight: bold;
+        border: 5px solid variaveis.$corDeFundoBotaoPrimario;
+        border-radius: 12px;
+        max-width: 760px;
+
+        @media (max-width: 640px) {
+            font-size: 24px;
+        }
+    }
+
+    &__infos {
+        margin: 0 auto;
+        padding: 24px;
+        width: 520px;
+        font-size: 28px;
+        text-align: center;
+        line-height: 42px;
+        background-color: rgba(variaveis.$corDeFundoBotaoPrimario, 0.4);
+        border-radius: 16px;
+
+        @media (max-width: 640px) {
+            max-width: 100%;
+            font-size: 24px;
+            padding: 12px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        font-size: 24px;
+    }
+
+}

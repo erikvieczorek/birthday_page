@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Erik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="images/bolo.png" alt="Bolo">
+                <h1>Aniversário do Erik</h1>
+            </div>
+            <a id="scroll-to-confirmation" class="button">Confirme a sua presença</a>
+        </div>
+    </header>
+    <div class="hero">
+        <img class="hero__logo" data-aos="fade-down" src="./images/happy_birthday.png" alt="Happy Birthday">
+    </div>
+    <section class="infos-bar">
+        <div class="container">
+            <p class="infos-bar__text">
+                <span id="contador"></span>
+            </p>
+            <ul class="infos-bar__infos" data-aos="flip-left">
+                <li class="infos-bar__infos__item">
+                    <b>Localização: </b>
+                        Minha casa
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando: </b>
+                        26/11/2023 às 19hrs
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="event event--localization">
+        <h2>Como chegar:</h2>
+        <div class="container" data-aos="zoom-in">
+            <iframe class="event__localization" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8639.870783104794!2d-51.440136468758205!3d-29.323211612541087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c1c81c1c42a31%3A0x6fb21b710fffef0c!2sRS-446%2C%20Rio%20Grande%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1699448414484!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="event event--about event--image-left">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre o evento</h2>
+                <p class="event__details__description"> 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae eos laudantium magnam similique nemo optio quaerat saepe, error non animi rem distinctio, atque esse dolorem repellendus vitae eius deleniti?
+                </p>
+            </div>
+            <img class="event__image" src="./images/drums.png" alt="Guitarra">
+        </div>
+    </section>
+    <section class="event event--atractions">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Atrações</h2>
+                <p class="event__details__description"> 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae eos laudantium magnam similique nemo optio quaerat saepe, error non animi rem distinctio, atque esse dolorem repellendus vitae eius deleniti?
+                </p>
+            </div>
+            <img class="event__image" src="./images/guitar.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--confirmation" id="confirmation">
+        <div class="container" data-aos="zoom-out" >
+            <form class="event__confirmation">
+                <h2>Confirme sua presença</h2>
+                <label for="name">Digite seu Nome:</label>
+                <input type="text" id="name">
+                <span class="error-message" id="name-error"></span>
+                <label for="email">Digite seu E-mail:</label>
+                <input type="email" id="email">
+                <span class="error-message" id="email-error"></span>
+                <button class="button" type="submit">Confirmar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

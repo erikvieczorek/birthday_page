@@ -1,0 +1,121 @@
+@use 'variaveis';
+
+.event {
+    padding: 80px 32px;
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &--localization {
+        background-image: linear-gradient(variaveis.$corDeFundo4, variaveis.$corDeFundo5);
+        & h2 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+
+    &--about {
+        background-image: linear-gradient(variaveis.$corDeFundo5, variaveis.$corDeFundo3);
+    }
+
+    &--atractions {
+        background-image: linear-gradient(variaveis.$corDeFundo3, variaveis.$corDeFundo4);
+    }
+
+    &--confirmation {
+        background-image: linear-gradient(variaveis.$corDeFundo4, variaveis.$corDeFundo5);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 480px;
+    }
+
+    &__localization {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    &__confirmation {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        width: 560px;
+        border: 5px solid variaveis.$corDeFundoBotaoPrimario;
+        padding: 26px;
+        border-radius: 12px;
+        background-color: rgba(variaveis.$corDeFundo1, 0.2);
+
+        & h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 36px;
+        }
+
+        .error-message {
+            font-size: 14px;
+            color: rgb(111, 14, 14);
+            display: block;
+            margin-bottom: 14px;
+        }
+    
+        input {
+            width: 100%;
+            font-size: 16px;
+            margin-top: 4px;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 120px;
+            margin: 0 auto;
+        }
+    }
+
+    &__details {
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        &__confirmation {
+            max-width: 100%;
+            font-size: 16px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+}

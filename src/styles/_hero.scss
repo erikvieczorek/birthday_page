@@ -1,0 +1,24 @@
+@use 'variaveis';
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(../images/cake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+
+        &__logo {
+                margin: 0 auto;
+                height: 340px;
+                width: 760px;
+                max-width: 100%;
+                display: block;
+                filter: blur(.5px) hue-rotate(270deg);
+            }
+    
+    @media (max-width: 640px) {
+        &__logo {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use 'variaveis';
+@use 'hero';
+@use 'header';
+@use './components/infos_bar';
+@use 'event';
+@use './components/button';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: linear-gradient(variaveis.$corDeFundo1, variaveis.$corDeFundo2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: variaveis.$corTextoPrincipal
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
