@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (nameInput.value.trim() === "") {
             nameError.textContent = "*Campo obrigatório";
+            nameError.style.color = "red";
             hasError = true;
         } else {
             nameError.textContent = "";
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (emailInput.value.trim() === "") {
             emailError.textContent = "*Campo obrigatório";
+            nameError.style.color = "red";
             hasError = true;
         } else {
             emailError.textContent = "";
